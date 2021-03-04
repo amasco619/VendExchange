@@ -11,6 +11,7 @@ import {
   SafeAreaView,
   StatusBar,
 } from 'react-native';
+import Post from './src/components/Post';
 import HomePage from './src/screen/Home';
 
 const App: () => React$Node = () => {
@@ -18,7 +19,8 @@ const App: () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <HomePage />
+        {/* <HomePage /> */}
+        <Post />
       </SafeAreaView>
     </>
   );
