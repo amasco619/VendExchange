@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, FlatList } from 'react-native'
-import feed from '../../../../assests/data/feed'
-import Post from '../../../components/Post'
+import feed from '../../../assests/data/feed'
+import Post from '../../components/Post'
 
 const PostList = () => {
     return (

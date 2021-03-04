@@ -14,7 +14,7 @@ import {
 import feed from './assests/data/feed';
 import Post from './src/components/Post';
 import HomePage from './src/screen/Home';
-import PostList from './src/screen/Home/PostList';
+import PostList from './src/screen/PostList';
 
 // const item = feed[0]
 
