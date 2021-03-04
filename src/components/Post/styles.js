@@ -11,16 +11,16 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
     name: {
-        marginVertical: 10,
-        fontSize: 20,
+        marginVertical: 5,
+        fontSize: 16,
         color: '#5b5b5b',
     },
     description: {
-        fontSize: 22,
-        lineHeight: 30,
+        fontSize: 18,
+        lineHeight: 26,
     },
     price: {
-        fontSize: 20,
+        fontSize: 18,
         marginVertical: 10,
     },
     oldPrice: {
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     },
     number:{
         color: '#5b5b5b',
-        fontSize: 20,
+        fontSize: 16,
     },
 })
 

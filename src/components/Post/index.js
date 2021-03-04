@@ -8,22 +8,22 @@ const Post = (props) => {
             {/* image */}
             <Image 
                 style={styles.image} 
-                source={{uri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg'}}
+                source={{uri: props.post.image}}
             />
             {/* owner & product */}
-            <Text style={styles.name}>Piero: Laptop</Text>
+            <Text style={styles.name}>{props.post.name}: {props.post.type}</Text>
             
             {/* Type and Description */}
-            <Text style={styles.description} numberOfLines={2}>I have a Laptop for sale at a very cheap rate. Come and patronize me and you won't regret it. I will also give you waranty.</Text>
+            <Text style={styles.description} numberOfLines={2}>{props.post.title}</Text>
 
             {/* Price */}
             <Text style={styles.price}>
-                <Text style={styles.oldPrice}>N140,000</Text>
-                <Text style={styles.newPrice}>  N110,000</Text>
+                <Text style={styles.oldPrice}>N{props.post.oldPrice}</Text>
+                <Text style={styles.newPrice}>  N{props.post.newPrice}</Text>
             </Text>
             
             {/* number */}
-            <Text style={styles.number}>08012458899</Text>
+            <Text style={styles.number}>{props.post.number}</Text>
         </View>
     )
 }
