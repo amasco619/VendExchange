@@ -14,8 +14,9 @@ import {
 import feed from './assests/data/feed';
 import Post from './src/components/Post';
 import HomePage from './src/screen/Home';
+import PostList from './src/screen/Home/PostList';
 
-const item = feed[0]
+// const item = feed[0]
 
 const App: () => React$Node = () => {
   return (
@@ -23,7 +24,8 @@ const App: () => React$Node = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         {/* <HomePage /> */}
-        <Post post={item}/>
+        {/* <Post post={item}/> */}
+        <PostList />
       </SafeAreaView>
     </>
   );

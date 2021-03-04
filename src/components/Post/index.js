@@ -3,27 +3,30 @@ import {View, Text, Image } from "react-native"
 import styles from "./styles"
 
 const Post = (props) => {
+
+    const post = props.post
+
     return (
         <View style={styles.container}>
             {/* image */}
             <Image 
                 style={styles.image} 
-                source={{uri: props.post.image}}
+                source={{uri: post.image}}
             />
             {/* owner & product */}
-            <Text style={styles.name}>{props.post.name}: {props.post.type}</Text>
+            <Text style={styles.name}>{post.name}: {post.type}</Text>
             
             {/* Type and Description */}
-            <Text style={styles.description} numberOfLines={2}>{props.post.title}</Text>
+            <Text style={styles.description} numberOfLines={2}>{post.title}</Text>
 
             {/* Price */}
             <Text style={styles.price}>
-                <Text style={styles.oldPrice}>N{props.post.oldPrice}</Text>
-                <Text style={styles.newPrice}>  N{props.post.newPrice}</Text>
+                <Text style={styles.oldPrice}>N{post.oldPrice}</Text>
+                <Text style={styles.newPrice}>  N{post.newPrice}</Text>
             </Text>
             
             {/* number */}
-            <Text style={styles.number}>{props.post.number}</Text>
+            <Text style={styles.number}>{post.number}</Text>
         </View>
     )
 }
