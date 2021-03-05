@@ -15,6 +15,7 @@ import feed from './assests/data/feed';
 import Post from './src/components/Post';
 import HomePage from './src/screen/Home';
 import PostList from './src/screen/PostList';
+import SearchList from './src/screen/SearchList';
 
 // const item = feed[0]
 
@@ -25,7 +26,8 @@ const App: () => React$Node = () => {
       <SafeAreaView>
         {/* <HomePage /> */}
         {/* <Post post={item}/> */}
-        <PostList />
+        {/* <PostList /> */}
+        <SearchList />
       </SafeAreaView>
     </>
   );

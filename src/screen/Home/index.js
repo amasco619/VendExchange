@@ -8,8 +8,8 @@ const HomePage = (props) => {
         <View>
             <Pressable
                 style={styles.searchButton}
-                onPress={() => console.warn('Search Button pressed')}
-            >
+                onPress={() => console.warn('Search Button pressed')}>
+                    
                 <Fontisto name="search" size={25} color={"#f15454"} />
                 <Text style={styles.searchButtonText}>    What do you seek?</Text>
             </Pressable>
