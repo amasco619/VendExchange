@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 import feed from './assests/data/feed';
 import Post from './src/components/Post';
+import GuestCount from './src/screen/GuestCount';
 import HomePage from './src/screen/Home';
 import PostList from './src/screen/PostList';
 import SearchList from './src/screen/SearchList';
@@ -27,7 +28,8 @@ const App: () => React$Node = () => {
         {/* <HomePage /> */}
         {/* <Post post={item}/> */}
         {/* <PostList /> */}
-        <SearchList />
+        {/* <SearchList /> */}
+        <GuestCount />
       </SafeAreaView>
     </>
   );
