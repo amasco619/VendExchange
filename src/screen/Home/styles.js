@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         position: 'absolute',
         top: 25,
-        elevation: 100,
-        //zIndex for iOS
+        elevation: 101,
+        zIndex:100,
     },
     searchButtonText: {
         fontSize: 16,
