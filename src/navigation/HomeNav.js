@@ -2,6 +2,7 @@ import React from 'react'
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs"
 import HomePage from '../screen/Home'
 import SearchList from '../screen/SearchList';
+import GuestCount from '../screen/GuestCount'
 
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -26,7 +27,7 @@ const HomeNav = () => {
                         <FontAwesome name="heart-o" size={25} color={color} />
                     )
                 }}/>
-
+                
                 <Tab.Screen 
                 name={"Search"}
                 component={SearchList}
@@ -47,7 +48,7 @@ const HomeNav = () => {
 
                 <Tab.Screen 
                 name={"Profile"}
-                component={HomePage}
+                component={GuestCount}
                 options={{
                     tabBarIcon: ({color}) => (
                         <EvilIcons name="user" size={25} color={color} />

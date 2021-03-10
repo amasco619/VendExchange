@@ -14,10 +14,11 @@ const Post = (props) => {
                 source={{uri: post.image}}
             />
             {/* owner & product */}
-            <Text style={styles.name}>{post.name}: {post.type}</Text>
+            <Text style={styles.name}>{post.name}: {post.location}</Text>
             
             {/* Type and Description */}
-            <Text style={styles.description} numberOfLines={2}>{post.title}</Text>
+            <Text style={styles.description} numberOfLines={2}>
+                {post.type}. {post.title}</Text>
 
             {/* Price */}
             <Text style={styles.price}>
