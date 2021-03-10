@@ -25,7 +25,7 @@ const HomePage = (props) => {
 
                 <Pressable
                     style={styles.button}
-                    onPress={() => console.warn('Button pressed')}>
+                    onPress={() => navigation.navigate('Item Search')}>
                     <Text style={styles.buttonText}>Explore more items</Text>
                 </Pressable>
             </ImageBackground>

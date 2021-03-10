@@ -9,27 +9,33 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import PostList from '../screen/PostList';
 
 
+// https://github.com/oblador/react-native-vector-icons#bundled-icon-sets
+//For the Navigation Icons
+// https://oblador.github.io/react-native-vector-icons/
 const Tab = createBottomTabNavigator()
 
 const HomeNav = () => {
     return (
-        <Tab.Navigator tabBarOptions={{
-            activeTintColor: '#f15454'
+        <Tab.Navigator 
+            initialRouteName="Home"
+            tabBarOptions={{
+                activeTintColor: '#f15454'
         }}>
             <Tab.Screen 
-                name={"Home"}
+                name="Home"
                 component={HomePage}
                 options={{
                     tabBarIcon: ({color}) => (
-                        <FontAwesome name="heart-o" size={25} color={color} />
+                        <Feather name="home" size={25} color={color} />
                     )
                 }}/>
                 
                 <Tab.Screen 
-                name={"Search"}
+                name="Search"
                 component={SearchList}
                 options={{
                     tabBarIcon: ({color}) => (
@@ -38,7 +44,7 @@ const HomeNav = () => {
                 }}/>
 
                 <Tab.Screen 
-                name={"message"}
+                name="message"
                 component={PostList}
                 options={{
                     tabBarIcon: ({color}) => (
@@ -47,7 +53,7 @@ const HomeNav = () => {
                 }}/>
 
                 <Tab.Screen 
-                name={"Profile"}
+                name="Profile"
                 component={GuestCount}
                 options={{
                     tabBarIcon: ({color}) => (

@@ -24,7 +24,7 @@ import PostList from './src/screen/PostList';
 import SearchList from './src/screen/SearchList';
 import Router from './src/navigation/router';
 
-// const item = feed[0]
+// const item = feed[1]
 
 const App: () => React$Node = () => {
   return (
