@@ -25,7 +25,7 @@ const SearchList = () => {
                 renderItem={({item}) => (
                     <Pressable 
                         onPress={() => navigation.navigate('Home', {
-                            screen: 'Home',
+                            screen: 'Search',
                             params: {
                                 screen: 'SearchResults'
                             }

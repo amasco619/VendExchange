@@ -13,8 +13,8 @@ const HomePage = (props) => {
                 style={styles.searchButton}
                 onPress={() => navigation.navigate('Location Search')}
             >
-                <Fontisto name="search" size={25} color={"#f15454"} />
-                <Text style={styles.searchButtonText}>    What do you seek?</Text>
+                <Fontisto name="search" size={25} color={"#3161bd"} />
+                <Text style={styles.searchButtonText}>  What do you seek?</Text>
             </Pressable>
 
             <ImageBackground
@@ -26,7 +26,7 @@ const HomePage = (props) => {
                 <Pressable
                     style={styles.button}
                     onPress={() => navigation.navigate('Item Search')}>
-                    <Text style={styles.buttonText}>Explore more items</Text>
+                    <Text style={styles.buttonText}>Explore requests</Text>
                 </Pressable>
             </ImageBackground>
         </View >

@@ -6,7 +6,7 @@ import GuestCount from '../screen/GuestCount'
 
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -22,13 +22,13 @@ const Tab = createBottomTabNavigator()
 const HomeNav = () => {
     return (
         <Tab.Navigator 
-            initialRouteName="Home"
+            // initialRouteName="Home"
             tabBarOptions={{
-                activeTintColor: '#f15454'
+                activeTintColor: '#3161bd'
         }}>
             <Tab.Screen 
                 name="Home"
-                component={ExploreNav}
+                component={HomePage}
                 options={{
                     tabBarIcon: ({color}) => (
                         <Feather name="home" size={25} color={color} />
@@ -37,19 +37,19 @@ const HomeNav = () => {
                 
                 <Tab.Screen 
                 name="Search"
-                component={SearchList}
+                component={ExploreNav}
                 options={{
                     tabBarIcon: ({color}) => (
-                        <Fontisto name="search" size={25} color={color} />
+                        <MaterialIcons name="dynamic-feed" size={25} color={color} />
                     )
                 }}/>
 
                 <Tab.Screen 
-                name="Message"
+                name="Requests"
                 component={PostList}
                 options={{
                     tabBarIcon: ({color}) => (
-                        <Feather name="message-square" size={25} color={color} />
+                        <Fontisto name="search" size={25} color={color} />
                     )
                 }}/>
 

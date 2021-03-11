@@ -2,6 +2,7 @@ import React from 'react'
 import {createStackNavigator} from '@react-navigation/stack'
 import HomePage from '../screen/Home'
 import PostList from '../screen/PostList'
+import GuestCount from '../screen/GuestCount'
 
 
 const Stack = createStackNavigator()
@@ -10,10 +11,10 @@ const Router = () => {
     return (
         <Stack.Navigator>
             <Stack.Screen 
-                name='Home'
-                component={HomePage}
+                name='ItemSearch'
+                component={GuestCount}
                 options={{
-                    headerShown: false,
+                    title: 'All items available',
                 }} />
         
             <Stack.Screen 
