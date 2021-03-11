@@ -11,6 +11,7 @@ import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import PostList from '../screen/PostList';
+import ExploreNav from './ExploreNav';
 
 
 // https://github.com/oblador/react-native-vector-icons#bundled-icon-sets
@@ -27,7 +28,7 @@ const HomeNav = () => {
         }}>
             <Tab.Screen 
                 name="Home"
-                component={HomePage}
+                component={ExploreNav}
                 options={{
                     tabBarIcon: ({color}) => (
                         <Feather name="home" size={25} color={color} />
@@ -44,7 +45,7 @@ const HomeNav = () => {
                 }}/>
 
                 <Tab.Screen 
-                name="message"
+                name="Message"
                 component={PostList}
                 options={{
                     tabBarIcon: ({color}) => (

@@ -24,7 +24,12 @@ const SearchList = () => {
                 data={Search}
                 renderItem={({item}) => (
                     <Pressable 
-                        onPress={() => navigation.navigate('Item Search')}
+                        onPress={() => navigation.navigate('Home', {
+                            screen: 'Home',
+                            params: {
+                                screen: 'SearchResults'
+                            }
+                        })}
                         style={styles.row} >
                         <View style={styles.iconContainer}>
                             <Entypo name={"location-pin"} size={30} />
