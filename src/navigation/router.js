@@ -22,7 +22,7 @@ const Router = () => {
                     name="Location Search"
                     component={SearchList}
                     options={{
-                        title: 'Search Places'
+                        title: 'Search location'
                     }}/>
 
                 <Stack.Screen 
