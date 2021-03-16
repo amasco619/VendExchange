@@ -27,7 +27,7 @@ const Post = (props) => {
             </Text>
             
             {/* number */}
-            <Text style={styles.number}>{post.number}</Text>
+            {/* <Text style={styles.number}>{post.number}</Text> */}
         </View>
     )
 }

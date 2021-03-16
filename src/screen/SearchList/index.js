@@ -30,7 +30,7 @@ const SearchList = () => {
                 fetchDetails
                 styles={{textInput: styles.textInput}}
                 query={{
-                    key: 'AIzaSyCuyNNQbJcq2x9nH6xNV0Rus9fUp690KJo',
+                    key: 'AIzaSyA9WAn2l5GbzkUsKvtaM6jsOlIsBvZWd0I',
                     language: 'en',
                     components: 'country:ng',
                     types: '(cities)',
