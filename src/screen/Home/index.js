@@ -2,7 +2,7 @@ import React from 'react';
 import { View, ImageBackground, Text, Pressable } from 'react-native';
 import styles from './styles';
 import Fontisto from 'react-native-vector-icons/Fontisto'
-import {useNavigation} from '@react-navigation/native'
+import { useNavigation } from '@react-navigation/native'
 
 const HomePage = (props) => {
     const navigation = useNavigation()
@@ -11,7 +11,7 @@ const HomePage = (props) => {
         <View>
             <Pressable
                 style={styles.searchButton}
-                onPress={() => navigation.navigate('Location Search')}
+                onPress={() => navigation.navigate('Search')}
             >
                 <Fontisto name="search" size={25} color={"#3161bd"} />
                 <Text style={styles.searchButtonText}>  What do you seek?</Text>

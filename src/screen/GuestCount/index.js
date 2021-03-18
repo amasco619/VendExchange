@@ -3,7 +3,7 @@ import { View, Text, Pressable } from 'react-native'
 import styles from './styles'
 import Fontisto from 'react-native-vector-icons/Fontisto'
 import { StyleSheet, Dimensions } from 'react-native'
-import {useNavigation} from '@react-navigation/native'
+import { useNavigation } from '@react-navigation/native'
 
 const GuestCount = () => {
     const navigation = useNavigation()
@@ -28,9 +28,9 @@ const GuestCount = () => {
             >
                 <Fontisto name="search" size={25} color={"#3161bd"} />
                 <Text style={{
-                        fontSize: 16,
-                        fontWeight: 'bold',
-                    }}>  What do you seek?</Text>
+                    fontSize: 16,
+                    fontWeight: 'bold',
+                }}>  Please select a location</Text>
             </Pressable>
             {/* Row 1: Adults */}
             <View style={styles.row}>
@@ -40,7 +40,7 @@ const GuestCount = () => {
                 </View>
                 {/* Buttons with values */}
                 <View style={styles.buttonDesign}>
-                    <Pressable 
+                    <Pressable
                         onPress={() => setAdults(Math.max(0, adults - 1))}
                         style={styles.button}
                     >
@@ -49,8 +49,8 @@ const GuestCount = () => {
 
                     <Text style={styles.count}>{adults}</Text>
 
-                    <Pressable 
-                        onPress={() => setAdults (adults + 1)}
+                    <Pressable
+                        onPress={() => setAdults(adults + 1)}
                         style={styles.button}
                     >
                         <Text style={styles.sign}>+</Text>
