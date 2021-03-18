@@ -23,8 +23,8 @@ const SearchMap = () => {
                     latitudeDelta: 0.8,
                     longitudeDelta: 0.8,
                 }}>
-                {places.map(place => (
-                    <MapMarker
+                {places.map((place, key) => (
+                    <MapMarker key={key}
                         isSelected={place.id === selectedPlaceId}
                         coordinate={place.coordinate}
                         price={place.newPrice}
