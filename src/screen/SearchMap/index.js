@@ -1,11 +1,9 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable react-native/no-inline-styles */
 import React, { useState } from 'react';
 import { View } from 'react-native';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import MapMarker from '../../components/MapMarker';
+import PostCarousel from '../../components/PostCarousel'
 import places from '../../../assests/data/feed';
-
 
 //https://www.npmjs.com/package/react-native-maps
 const SearchMap = () => {
@@ -32,6 +30,10 @@ const SearchMap = () => {
                     />)
                 )}
             </MapView>
+
+            <View style={{ position: 'absolute', bottom: 30 }}>
+                <PostCarousel post={places[0]} />
+            </View>
         </View>
     );
 };
