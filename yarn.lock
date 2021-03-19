@@ -5727,6 +5727,11 @@ react-native-screens@^2.18.1:
   resolved "https://registry.npmjs.org/react-native-screens/-/react-native-screens-2.18.1.tgz"
   integrity sha512-r5WZLpmx2hHjC1RgMdPq5YpSU9tEhBpUaZ5M1SUtNIONyiLqQVxabhRCINdebIk4depJiIl7yw2Q85zJyeX6fw==
 
+react-native-shadow-generator@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-shadow-generator/-/react-native-shadow-generator-1.1.2.tgz#9a60cbb98b1e1378587f3aa7bdb35165db566bfb"
+  integrity sha512-WfeBx/lHsEq2AwjeEm+4/n8F3Tbl/rl1EeEQkl8lMAsCVmYVBPc4XmXgjo9HQuN5sWt5MdAOrJOBiZBKZNrnZA==
+
 react-native-tab-view@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/react-native-tab-view/-/react-native-tab-view-3.0.0.tgz"
