@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FlatList, useWindowDimensions, View } from 'react-native';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import MapMarker from '../../components/MapMarker';
@@ -10,6 +10,15 @@ const SearchMap = () => {
 
     const [selectedPlaceId, setSelectedPlaceId] = useState(null);
     const width = useWindowDimensions().width
+    const flatlist = useRef()
+
+    useEffect(() => {
+        if (!selectedPlaceId || !flatlist) {
+            return;
+        }
+        const index = places.findIndex(place => place.id === selectedPlaceId)
+        flatlist.current.scrollToIndex({ index })
+    }, [selectedPlaceId])
 
     return (
         <View style={{ width: '100%', height: '100%' }}>
@@ -34,6 +43,7 @@ const SearchMap = () => {
 
             <View style={{ position: 'absolute', bottom: 10 }}>
                 <FlatList
+                    ref={flatlist}
                     data={places}
                     renderItem={({ item }) => <PostCarousel post={item} />}
                     horizontal
