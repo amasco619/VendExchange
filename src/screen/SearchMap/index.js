@@ -9,20 +9,41 @@ import places from '../../../assests/data/feed';
 const SearchMap = () => {
 
     const [selectedPlaceId, setSelectedPlaceId] = useState(null);
+
     const width = useWindowDimensions().width
-    const flatlist = useRef()
+
+    const scrollList = useRef()
+    const mapAnime = useRef()
+
+    const viewConfig = useRef({ itemVisiblePercentThreshold: 70 })
+    const onViewChange = useRef(({ viewableItems }) => {
+        if (viewableItems.length > 0) {
+            const selectedPlace = viewableItems[0].item
+            setSelectedPlaceId(selectedPlace.id)
+        }
+    })
 
     useEffect(() => {
-        if (!selectedPlaceId || !flatlist) {
+        if (!selectedPlaceId || !scrollList) {
             return;
         }
         const index = places.findIndex(place => place.id === selectedPlaceId)
-        flatlist.current.scrollToIndex({ index })
+        scrollList.current.scrollToIndex({ index })
+
+        const selectedPlace = places[index]
+        const region = {
+            latitude: selectedPlace.coordinate.latitude,
+            longitude: selectedPlace.coordinate.longitude,
+            latitudeDelta: 0.09,
+            longitudeDelta: 0.09,
+        }
+        mapAnime.current.animateToRegion(region)
     }, [selectedPlaceId])
 
     return (
         <View style={{ width: '100%', height: '100%' }}>
             <MapView
+                ref={mapAnime}
                 provider={PROVIDER_GOOGLE}
                 style={{ width: '100%', height: '100%' }}
                 initialRegion={{
@@ -43,14 +64,16 @@ const SearchMap = () => {
 
             <View style={{ position: 'absolute', bottom: 10 }}>
                 <FlatList
-                    ref={flatlist}
+                    ref={scrollList}
                     data={places}
                     renderItem={({ item }) => <PostCarousel post={item} />}
                     horizontal
                     showsHorizontalScrollIndicator={false}
                     snapToInterval={width - 60}
-                    snapToAlignment={"center"}
-                    decelerationRate={"fast"}
+                    snapToAlignment="center"
+                    decelerationRate="fast"
+                    viewabilityConfig={viewConfig.current}
+                    onViewableItemsChanged={onViewChange.current}
                 />
             </View>
         </View>

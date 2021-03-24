@@ -49,7 +49,6 @@ const styles = StyleSheet.create({
     },
 
     newPrice: {
-        color: 'black',
         fontWeight: 'bold',
     },
     number: {
