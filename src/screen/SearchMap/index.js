@@ -31,6 +31,7 @@ const SearchMap = () => {
         scrollList.current.scrollToIndex({ index })
 
         const selectedPlace = places[index]
+        //Defining the region where the MAP will zoom in
         const region = {
             latitude: selectedPlace.coordinate.latitude,
             longitude: selectedPlace.coordinate.longitude,

@@ -1,5 +1,5 @@
 import React from 'react'
-import {createBottomTabNavigator} from "@react-navigation/bottom-tabs"
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import HomePage from '../screen/Home'
 import SearchList from '../screen/SearchList';
 import GuestCount from '../screen/GuestCount'
@@ -12,6 +12,7 @@ import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import PostList from '../screen/PostList';
 import ExploreNav from './ExploreNav';
+import PostScreen from '../screen/PostScreen';
 
 
 // https://github.com/oblador/react-native-vector-icons#bundled-icon-sets
@@ -21,46 +22,46 @@ const Tab = createBottomTabNavigator()
 
 const HomeNav = () => {
     return (
-        <Tab.Navigator 
+        <Tab.Navigator
             // initialRouteName="Home"
             tabBarOptions={{
                 activeTintColor: '#3161bd'
-        }}>
-            <Tab.Screen 
+            }}>
+            <Tab.Screen
                 name="Home"
                 component={HomePage}
                 options={{
-                    tabBarIcon: ({color}) => (
+                    tabBarIcon: ({ color }) => (
                         <Feather name="home" size={25} color={color} />
                     )
-                }}/>
-                
-                <Tab.Screen 
+                }} />
+
+            <Tab.Screen
                 name="Search"
                 component={ExploreNav}
                 options={{
-                    tabBarIcon: ({color}) => (
+                    tabBarIcon: ({ color }) => (
                         <MaterialIcons name="dynamic-feed" size={25} color={color} />
                     )
-                }}/>
+                }} />
 
-                <Tab.Screen 
+            <Tab.Screen
                 name="Requests"
                 component={PostList}
                 options={{
-                    tabBarIcon: ({color}) => (
+                    tabBarIcon: ({ color }) => (
                         <Fontisto name="search" size={25} color={color} />
                     )
-                }}/>
+                }} />
 
-                <Tab.Screen 
+            <Tab.Screen
                 name="Profile"
-                component={GuestCount}
+                component={PostScreen}
                 options={{
-                    tabBarIcon: ({color}) => (
+                    tabBarIcon: ({ color }) => (
                         <EvilIcons name="user" size={25} color={color} />
                     )
-                }}/>
+                }} />
         </Tab.Navigator>
     )
 }
