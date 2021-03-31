@@ -12,7 +12,6 @@ import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import PostList from '../screen/PostList';
 import ExploreNav from './ExploreNav';
-import PostScreen from '../screen/PostScreen';
 
 
 // https://github.com/oblador/react-native-vector-icons#bundled-icon-sets
@@ -56,7 +55,7 @@ const HomeNav = () => {
 
             <Tab.Screen
                 name="Profile"
-                component={PostScreen}
+                component={GuestCount}
                 options={{
                     tabBarIcon: ({ color }) => (
                         <EvilIcons name="user" size={25} color={color} />
