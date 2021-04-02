@@ -13,10 +13,10 @@ const HomePage = (props) => {
 
     return (
         <View>
-            <View style={{ justifyContent: 'space-between', height: '82%' }}>
+            <View style={{ justifyContent: 'space-between', height: '82%', backgroundColor: '#fff' }}>
                 <Pressable
                     style={styles.searchButton}
-                    onPress={() => navigation.navigate('Search')}
+                    onPress={() => navigation.navigate('Location Search')}
                 >
                     <Fontisto name="search" size={25} color={"#3161bd"} />
                     <Text style={styles.searchButtonText}>  What do you seek?</Text>
@@ -30,13 +30,13 @@ const HomePage = (props) => {
 
                     <Pressable
                         style={styles.button}
-                        onPress={() => navigation.navigate('Item Search')}>
+                        onPress={() => navigation.navigate('Requests')}>
                         <Text style={styles.buttonText}>Explore requests</Text>
                     </Pressable>
                 </ImageBackground>
             </View>
 
-            <View style={{}}>
+            <View>
                 <FlatList
                     data={places}
                     renderItem={({ item }) => <PostCarousel post={item} />}

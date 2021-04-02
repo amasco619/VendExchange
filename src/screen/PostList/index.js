@@ -6,9 +6,9 @@ import Post from '../../components/Post'
 const PostList = () => {
     return (
         <View>
-            <FlatList 
+            <FlatList
                 data={feed}
-                renderItem={({item}) => <Post post={item}/>}/>
+                renderItem={({ item }) => <Post post={item} />} />
         </View>
     )
 }

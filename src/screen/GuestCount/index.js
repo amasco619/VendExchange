@@ -1,37 +1,12 @@
 import React, { useState } from 'react'
 import { View, Text, Pressable } from 'react-native'
 import styles from './styles'
-import Fontisto from 'react-native-vector-icons/Fontisto'
-import { StyleSheet, Dimensions } from 'react-native'
-import { useNavigation } from '@react-navigation/native'
 
 const GuestCount = () => {
-    const navigation = useNavigation()
     const [adults, setAdults] = useState(0)
 
     return (
         <View>
-            <Pressable
-                style={{
-                    backgroundColor: '#fff',
-                    height: 50,
-                    width: Dimensions.get('screen').width - 20,
-                    borderRadius: 25,
-                    marginHorizontal: 10,
-                    marginBottom: 25,
-                    flexDirection: 'row',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    top: 20,
-                }}
-                onPress={() => navigation.navigate('Location Search')}
-            >
-                <Fontisto name="search" size={25} color={"#3161bd"} />
-                <Text style={{
-                    fontSize: 16,
-                    fontWeight: 'bold',
-                }}>  Please select a location</Text>
-            </Pressable>
             {/* Row 1: Adults */}
             <View style={styles.row}>
                 <View>

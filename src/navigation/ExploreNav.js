@@ -12,7 +12,7 @@ const Router = () => {
         <Stack.Navigator>
             <Stack.Screen
                 name='ItemSearch'
-                component={GuestCount}
+                component={PostList}
                 options={{
                     title: 'All items available',
                 }} />
