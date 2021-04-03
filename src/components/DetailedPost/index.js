@@ -1,5 +1,5 @@
 import React from "react"
-import { View, Text, Image, ScrollView } from "react-native"
+import { View, Text, Image, ScrollView, Pressable } from "react-native"
 import styles from "./styles"
 
 const DetailedPost = (props) => {
@@ -7,7 +7,7 @@ const DetailedPost = (props) => {
     const post = props.post
 
     return (
-        <ScrollView>
+        <View style={{ justifyContent: 'space-between', height: '100%' }}>
             <View style={styles.container}>
                 {/* image */}
                 <Image
@@ -29,7 +29,22 @@ const DetailedPost = (props) => {
                 {/* number */}
                 {/* <Text style={styles.number}>{post.number}</Text> */}
             </View>
-        </ScrollView>
+
+            <Pressable
+                onPress={() => console.warn('Notify the Seller')}
+                style={{
+                    marginBottom: 20,
+                    backgroundColor: '#0025c9',
+                    alignItems: 'center',
+                    justifyContent: "center",
+                    height: 50,
+                    marginHorizontal: 20,
+                    borderRadius: 10,
+
+                }}>
+                <Text style={{ fontSize: 20, color: 'white', fontWeight: 'bold' }}>Contact Owner</Text>
+            </Pressable>
+        </View>
     )
 }
 
