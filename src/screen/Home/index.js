@@ -26,7 +26,8 @@ const HomePage = (props) => {
                     source={require('../../../assests/images/design.png')}
                     style={styles.image}>
 
-                    <Text style={styles.title}>We Sell It</Text>
+                    <Text style={styles.title}>We</Text>
+                    <Text style={styles.title}>Get Am</Text>
 
                     <Pressable
                         style={styles.button}

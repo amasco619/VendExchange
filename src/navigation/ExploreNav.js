@@ -1,8 +1,7 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
-import PostList from '../screen/PostList'
-import GuestCount from '../screen/GuestCount'
 import PostSearchResultTab from './PostSearchResultTab'
+import HomePage from '../screen/Home'
 
 
 const Stack = createStackNavigator()
@@ -12,9 +11,9 @@ const Router = () => {
         <Stack.Navigator>
             <Stack.Screen
                 name='ItemSearch'
-                component={PostList}
+                component={HomePage}
                 options={{
-                    title: 'All items available',
+                    headerShown: false,
                 }} />
 
             <Stack.Screen

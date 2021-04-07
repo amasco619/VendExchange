@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
         fontSize: 60,
         fontWeight: 'bold',
         color: 'white',
-        width: '40%',
+        width: '60%',
         marginLeft: 25,
     },
     button: {

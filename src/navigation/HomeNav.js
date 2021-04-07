@@ -1,7 +1,6 @@
 import React from 'react'
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import HomePage from '../screen/Home'
-import SearchList from '../screen/SearchList';
 import GuestCount from '../screen/GuestCount'
 
 import Fontisto from 'react-native-vector-icons/Fontisto';
@@ -12,6 +11,7 @@ import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import PostList from '../screen/PostList';
 import ExploreNav from './ExploreNav';
+import RequestScreen from '../screen/RequestScreen';
 
 
 // https://github.com/oblador/react-native-vector-icons#bundled-icon-sets
@@ -28,7 +28,7 @@ const HomeNav = () => {
             }}>
             <Tab.Screen
                 name="Home"
-                component={HomePage}
+                component={ExploreNav}
                 options={{
                     tabBarIcon: ({ color }) => (
                         <Feather name="home" size={25} color={color} />
@@ -37,7 +37,7 @@ const HomeNav = () => {
 
             <Tab.Screen
                 name="Search"
-                component={ExploreNav}
+                component={PostList}
                 options={{
                     tabBarIcon: ({ color }) => (
                         <MaterialIcons name="dynamic-feed" size={25} color={color} />
@@ -46,7 +46,7 @@ const HomeNav = () => {
 
             <Tab.Screen
                 name="Requests"
-                component={PostList}
+                component={RequestScreen}
                 options={{
                     tabBarIcon: ({ color }) => (
                         <Fontisto name="search" size={25} color={color} />

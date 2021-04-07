@@ -45,7 +45,7 @@ const SearchList = () => {
                     <Pressable
                         onPress={() =>
                             navigation.navigate('Home', {
-                                screen: 'Search',
+                                screen: 'Home',
                                 params: {
                                     screen: 'SearchResults',
                                 },

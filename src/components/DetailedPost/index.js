@@ -34,7 +34,7 @@ const DetailedPost = (props) => {
                 onPress={() => console.warn('Notify the Seller')}
                 style={{
                     marginBottom: 20,
-                    backgroundColor: '#0025c9',
+                    backgroundColor: '#378be6',
                     alignItems: 'center',
                     justifyContent: "center",
                     height: 50,
