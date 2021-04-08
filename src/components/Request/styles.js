@@ -9,12 +9,12 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         borderColor: 'lightgrey',
     },
-    aText: {
+    descriptionText: {
         fontSize: 16,
         width: 310,
     },
-    cText: {
-        color: '#8d8d8d',
+    nameText: {
+        fontWeight: 'bold',
     },
     buttonDesign: {
         flexDirection: 'row',

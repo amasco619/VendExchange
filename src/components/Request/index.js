@@ -10,13 +10,13 @@ const Request = (props) => {
         <View>
             <View style={styles.row}>
                 <View>
-                    <Text style={styles.aText} numberOfLines={2}>{reqItem.description}</Text>
-                    <Text style={styles.aText}>{reqItem.name}</Text>
+                    <Text style={styles.nameText}>{reqItem.name}</Text>
+                    <Text style={styles.descriptionText} numberOfLines={2}>{reqItem.description}</Text>
                 </View>
                 {/* Buttons with values */}
                 <View>
                     <Pressable
-                        onPress={() => console.warn('Pressed')}
+                        onPress={() => console.warn('Notify the Requester')}
                         style={styles.button}
                     >
                         <Text style={styles.sign}>iGet</Text>
