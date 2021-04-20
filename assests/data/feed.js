@@ -9,10 +9,8 @@ export default [
     oldPrice: 25000,
     newPrice: 20000,
     number: '07012575236',
-    coordinate: {
-      latitude: 6.4366542374668105,
-      longitude: 3.4272923559529556,
-    },
+    latitude: 6.4366542374668105,
+    longitude: 3.4272923559529556,
   },
   {
     id: '1',
@@ -24,10 +22,8 @@ export default [
     oldPrice: 76000,
     newPrice: 65000,
     number: 7045789652,
-    coordinate: {
-      latitude: 6.433876282786796,
-      longitude: 3.4097049545165525,
-    },
+    latitude: 6.433876282786796,
+    longitude: 3.4097049545165525,
   },
   {
     id: '2',
@@ -39,10 +35,8 @@ export default [
     oldPrice: 64000,
     newPrice: 55000,
     number: 8096547896,
-    coordinate: {
-      latitude: 6.456943732206362,
-      longitude: 3.390672542179294,
-    },
+    latitude: 6.456943732206362,
+    longitude: 3.390672542179294,
   },
   {
     id: '3',
@@ -54,9 +48,7 @@ export default [
     oldPrice: 120000,
     newPrice: 100000,
     number: '08063258965',
-    coordinate: {
-      latitude: 6.509896880647016,
-      longitude: 3.373959763323091,
-    },
+    latitude: 6.509896880647016,
+    longitude: 3.373959763323091,
   },
 ];

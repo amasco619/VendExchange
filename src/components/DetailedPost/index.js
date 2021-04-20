@@ -39,7 +39,7 @@ const DetailedPost = (props) => {
                     justifyContent: "center",
                     height: 50,
                     marginHorizontal: 20,
-                    borderRadius: 10,
+                    borderRadius: 25,
 
                 }}>
                 <Text style={{ fontSize: 20, color: 'white', fontWeight: 'bold' }}>Contact Owner</Text>

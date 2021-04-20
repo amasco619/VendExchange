@@ -20,7 +20,7 @@ const Router = () => {
                 name="SearchResults"
                 component={PostSearchResultTab}
                 options={{
-                    title: 'Search for items'
+                    title: 'Available listings'
                 }} />
         </Stack.Navigator>
     )

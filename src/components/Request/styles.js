@@ -30,8 +30,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     sign: {
-        fontSize: 22,
-        color: '#474747',
+        fontSize: 18,
+        color: 'white',
     },
     count: {
         marginHorizontal: 17,

@@ -22,7 +22,8 @@ const SearchMap = () => {
             setSelectedPlaceId(selectedPlace.id)
         }
     })
-
+    //syncing the PostCarousel with the MAP 
+    //so that when you click on the map it scrolls to the post(Listing)
     useEffect(() => {
         if (!selectedPlaceId || !scrollList) {
             return;
@@ -33,8 +34,8 @@ const SearchMap = () => {
         const selectedPlace = places[index]
         //Defining the region where the MAP will zoom in
         const region = {
-            latitude: selectedPlace.coordinate.latitude,
-            longitude: selectedPlace.coordinate.longitude,
+            latitude: selectedPlace.latitude,
+            longitude: selectedPlace.longitude,
             latitudeDelta: 0.09,
             longitudeDelta: 0.09,
         }
@@ -56,7 +57,7 @@ const SearchMap = () => {
                 {places.map((place, key) => (
                     <MapMarker key={key}
                         isSelected={place.id === selectedPlaceId}
-                        coordinate={place.coordinate}
+                        coordinate={{ latitude: place.latitude, longitude: place.longitude }}
                         price={place.newPrice}
                         onPress={() => setSelectedPlaceId(place.id)}
                     />)

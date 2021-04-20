@@ -12,6 +12,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import PostList from '../screen/PostList';
 import ExploreNav from './ExploreNav';
 import RequestScreen from '../screen/RequestScreen';
+import ProfilePage from '../screen/Profile';
 
 
 // https://github.com/oblador/react-native-vector-icons#bundled-icon-sets
@@ -49,13 +50,13 @@ const HomeNav = () => {
                 component={RequestScreen}
                 options={{
                     tabBarIcon: ({ color }) => (
-                        <Fontisto name="search" size={25} color={color} />
+                        <MaterialIcons name="post-add" size={25} color={color} />
                     )
                 }} />
 
             <Tab.Screen
                 name="Profile"
-                component={GuestCount}
+                component={ProfilePage}
                 options={{
                     tabBarIcon: ({ color }) => (
                         <EvilIcons name="user" size={25} color={color} />
