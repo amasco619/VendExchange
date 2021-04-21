@@ -2,8 +2,11 @@ import React, { useState } from 'react'
 import { View, Text, TextInput, Image, Pressable } from 'react-native'
 import styles from './styles'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import { useNavigation } from '@react-navigation/native'
 
 const ProfilePage = () => {
+
+    const navigation = useNavigation()
 
     const [inputText, setInputText] = useState('')
     return (
@@ -22,7 +25,7 @@ const ProfilePage = () => {
             </View>
             <View>
                 <Pressable
-                    onPress={() => console.warn('Show Items posted')}
+                    onPress={() => navigation.navigate('Listing')}
                     style={styles.buttons1}
                 >
                     <Text style={{ fontSize: 20, fontWeight: '600' }}>My Listing</Text>

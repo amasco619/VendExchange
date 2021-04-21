@@ -1,0 +1,28 @@
+export default [
+    {
+        id: '0',
+        image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg',
+        type: 'Entire Flat',
+        title: 'NEW lux. apartment in the center of Santa Cruz',
+        name: 'MByson',
+        location: 'Abuja',
+        oldPrice: 76000,
+        newPrice: 65000,
+        number: 7045789652,
+        latitude: 6.433876282786796,
+        longitude: 3.4097049545165525,
+    },
+    {
+        id: '1',
+        image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg',
+        type: 'Phone',
+        title: 'Typical canarian house',
+        name: 'MByson',
+        location: 'Rome',
+        oldPrice: 120000,
+        newPrice: 100000,
+        number: '08063258965',
+        latitude: 6.509896880647016,
+        longitude: 3.373959763323091,
+    },
+];

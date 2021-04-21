@@ -5,6 +5,7 @@ import SearchList from '../screen/SearchList'
 import HomeNav from './HomeNav';
 import PostList from '../screen/PostList';
 import PostScreen from '../screen/PostScreen';
+import Listing from '../screen/Listing';
 
 const Stack = createStackNavigator();
 
@@ -38,6 +39,13 @@ const Router = () => {
                     component={PostScreen}
                     options={{
                         headerShown: false
+                    }} />
+
+                <Stack.Screen
+                    name="Listing"
+                    component={Listing}
+                    options={{
+                        title: 'My Listing'
                     }} />
             </Stack.Navigator>
         </NavigationContainer>
