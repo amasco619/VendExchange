@@ -33,7 +33,7 @@ const ProfilePage = () => {
                 </Pressable>
                 <Pressable
                     style={styles.buttons2}
-                    onPress={() => console.warn('Show requests posted')}>
+                    onPress={() => navigation.navigate('My Requests')}>
                     <Text style={{ fontSize: 20, fontWeight: '600' }}>My Requests</Text>
                     <Text>View requests posted</Text>
                 </Pressable>

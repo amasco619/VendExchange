@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     sign: {
-        fontSize: 18,
+        fontSize: 16,
         color: 'white',
     },
     count: {
