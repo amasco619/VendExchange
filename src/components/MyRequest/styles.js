@@ -4,8 +4,7 @@ const styles = StyleSheet.create({
     row: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingVertical: 10,
-        marginHorizontal: 10,
+        padding: 10,
         borderBottomWidth: 1,
         borderColor: 'lightgrey',
         alignItems: 'center',
