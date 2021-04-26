@@ -31,7 +31,7 @@ const DetailedPost = (props) => {
             </View>
 
             <Pressable
-                onPress={() => console.warn('Notify the Seller')}
+                onPress={() => console.warn('Notify Seller and Display seller No.')}
                 style={{
                     marginBottom: 20,
                     backgroundColor: '#378be6',

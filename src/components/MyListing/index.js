@@ -1,5 +1,5 @@
 import React from "react"
-import { View, Text, Image } from "react-native"
+import { View, Text, Image, Pressable } from "react-native"
 import styles from "./styles"
 
 const MyListing = (props) => {
@@ -29,6 +29,7 @@ const MyListing = (props) => {
             {/* number */}
             {/* <Text style={styles.number}>{post.number}</Text> */}
         </View>
+
     )
 }
 

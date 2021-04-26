@@ -14,7 +14,7 @@ const ProfilePage = () => {
             <View style={styles.container}>
                 <Image
                     style={styles.profilePic}
-                    source={require('../../../assests/images/marker.jpg')}
+                    source={require('../../../assests/images/wallpaper.jpg')}
                 />
                 <Text style={styles.profileName}>NAME or email@email.com</Text>
                 {/* <TextInput

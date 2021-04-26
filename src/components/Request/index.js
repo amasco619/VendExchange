@@ -16,7 +16,7 @@ const Request = (props) => {
                 {/* Buttons with values */}
                 <View>
                     <Pressable
-                        onPress={() => console.warn('Notify the Requester')}
+                        onPress={() => console.warn('Notify Requester and Take to UploadPage')}
                         style={styles.button}
                     >
                         <Text style={styles.sign}>iGet</Text>
