@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native'
 import React from 'react'
 import { View, FlatList, Pressable, Text } from 'react-native'
 import ListItem from '../../../assests/data/ListItem'
@@ -5,6 +6,9 @@ import MyListing from '../../components/MyListing'
 
 
 const Listing = () => {
+
+    const navigation = useNavigation()
+
     return (
         <View style={{ justifyContent: 'space-between', height: '100%' }}>
             <View>
@@ -25,7 +29,7 @@ const Listing = () => {
                     alignItems: 'center',
                     position: 'absolute',
                 }}
-                onPress={() => console.warn('Listing Button Pressed')}>
+                onPress={() => navigation.navigate('New Listing')}>
                 <Text style={{
                     fontSize: 35,
                     color: 'white',

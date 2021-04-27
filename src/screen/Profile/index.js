@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { View, Text, TextInput, Image, Pressable } from 'react-native'
+import React from 'react'
+import { View, Text, Image, Pressable } from 'react-native'
 import styles from './styles'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { useNavigation } from '@react-navigation/native'
@@ -8,7 +8,6 @@ const ProfilePage = () => {
 
     const navigation = useNavigation()
 
-    const [inputText, setInputText] = useState('')
     return (
         <View>
             <View style={styles.container}>
@@ -17,11 +16,6 @@ const ProfilePage = () => {
                     source={require('../../../assests/images/wallpaper.jpg')}
                 />
                 <Text style={styles.profileName}>NAME or email@email.com</Text>
-                {/* <TextInput
-                    placeholder='title'
-                    value={inputText}
-                    onChange={setInputText}
-                /> */}
             </View>
             <View>
                 <Pressable

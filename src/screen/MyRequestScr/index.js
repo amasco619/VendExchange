@@ -1,9 +1,12 @@
+import { useNavigation } from '@react-navigation/native'
 import React from 'react'
 import { View, Text, FlatList, Pressable } from 'react-native'
 import ItemReq from '../../../assests/data/ItemReq'
 import MyRequest from '../../components/MyRequest'
 
 const MyRequestScr = () => {
+
+    const navigation = useNavigation()
 
     return (
         <View style={{ justifyContent: 'space-between', height: '100%' }}>
@@ -25,7 +28,7 @@ const MyRequestScr = () => {
                     alignItems: 'center',
                     position: 'absolute',
                 }}
-                onPress={() => console.warn('Request Button Pressed')}>
+                onPress={() => navigation.navigate('New Request')}>
                 <Text style={{
                     fontSize: 35,
                     color: 'white',
