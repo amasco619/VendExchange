@@ -1,11 +1,11 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, SafeAreaView } from 'react-native'
 
 const NewRequest = () => {
     return (
-        <View>
+        <SafeAreaView>
             <Text>Here we Upload the new request</Text>
-        </View>
+        </SafeAreaView>
     )
 }
 

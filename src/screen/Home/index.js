@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, ImageBackground, Text, useWindowDimensions, Pressable, FlatList } from 'react-native';
+import { View, ImageBackground, Text, SafeAreaView, useWindowDimensions, Pressable, FlatList } from 'react-native';
 import styles from './styles';
 import Fontisto from 'react-native-vector-icons/Fontisto'
 import { useNavigation } from '@react-navigation/native'
@@ -12,7 +12,7 @@ const HomePage = (props) => {
     const width = useWindowDimensions().width
 
     return (
-        <View>
+        <SafeAreaView>
             <View style={{ justifyContent: 'space-between', height: '82%', backgroundColor: '#fff' }}>
                 <Pressable
                     style={styles.searchButton}
@@ -48,7 +48,7 @@ const HomePage = (props) => {
                     decelerationRate="fast"
                 />
             </View>
-        </View >
+        </SafeAreaView>
     );
 };
 

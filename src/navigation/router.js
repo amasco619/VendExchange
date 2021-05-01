@@ -45,7 +45,7 @@ const Router = () => {
                     }} />
 
                 <Stack.Screen
-                    name="Listing"
+                    name="My Listing"
                     component={Listing}
                     options={{
                         title: 'My Listing'
