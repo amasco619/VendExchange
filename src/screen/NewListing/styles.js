@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     panelButton: {
         padding: 13,
         borderRadius: 10,
-        backgroundColor: '#FF6347',
+        backgroundColor: '#378be6',
         alignItems: 'center',
         marginVertical: 7,
     },
